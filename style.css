@@ -20,8 +20,13 @@ h1 {
     font-size: 4.5em;
     color: #646881;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 40px 20px 1px 20px;
+    position: absolute;
 }
 h1.grace {
     font-family: 'Autumn Chant';
     color: #5AD2F4;
+    margin: 67px 20px 5px 15px;
+    position: absolute;
+    font-size: 5em;
 }
