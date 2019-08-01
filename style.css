@@ -32,3 +32,15 @@ ul, li, a {
     margin: 50px 5px;
     position: relative;
 }
+
+/* Search Box */
+input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 1em;
+    font-family: 'bellaboo';
+    color: #404e4d;
+}
