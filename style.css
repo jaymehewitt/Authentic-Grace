@@ -11,14 +11,16 @@ ul, li, a {
 }
 
 /* Background */
-
 html {
     background-color: #E3DBDB;
 }
 
 /* Storefront Name */
-
 h1 {
-    font-size: 50px;
+    font-size: 70px;
     color: #404e4d;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+h1 grace {
+    font-family: 
 }
