@@ -36,11 +36,12 @@ ul, li, a {
 /* Search Box */
 input[type=text] {
     float: right;
-    padding: 6px;
+    padding: 5px;
     border: none;
-    margin-top: 8px;
+    margin-top: 117px;
     margin-right: 16px;
     font-size: 1em;
     font-family: 'bellaboo';
     color: #404e4d;
+    position: relative;
 }
