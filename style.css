@@ -31,6 +31,8 @@ ul, li, a {
     font-family: bellaboo;
     margin: 50px 5px;
     position: relative;
+    overflow: hidden;
+    background: transparent
 }
 
 /* Search Box */
@@ -53,6 +55,6 @@ ul, li, a:hover {
 
   /* Style the "active" element to highlight the current page */
 ul, li, a.active {
-    color: #5AD2F4;
-    text-emphasis: strong;
+    color: white;
+    text-decoration: bold;
 }
