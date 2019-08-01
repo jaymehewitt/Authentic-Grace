@@ -1,5 +1,5 @@
 /* Navigation Bar */
-ul, li, a{
+ul, li, a {
     list-style: none;
     float: left;
     color: #404e4d;
@@ -8,4 +8,11 @@ ul, li, a{
     text-decoration: none;
     font-size: 15px;
     font-family: bellaboo; 
+}
+
+/* Background */
+
+html {
+    background-color: #E3DBDB
+    
 }
