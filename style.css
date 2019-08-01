@@ -1,7 +1,7 @@
 /* Navigation Bar */
 .navigation a {
     list-style: none;
-    float: right;
+    float: left;
     color: #404e4d;
     text-align: center;
     padding: 14px 16px;
