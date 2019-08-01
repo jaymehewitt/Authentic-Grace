@@ -24,10 +24,11 @@ ul, li, a {
     list-style: none;
     float: left;
     color: #404e4d;
-    text-align: center;
-    padding: 14px 16px;
+    text-align: left;
+    padding: 10px 10px;
     text-decoration: none;
     font-size: 1em;
     font-family: bellaboo;
-    margin: 50px 15px 5px 15px;
+    margin: 50px 5px;
+    position: relative;
 }
