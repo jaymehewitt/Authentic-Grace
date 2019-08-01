@@ -49,30 +49,6 @@ search {
     position: relative;
 }
 
-search input[type="text"]
-{
-  background: none;
-  border: 0 none;
-  float: left;
-  height: 1.5em;
-  line-height: 1.5em;
-  margin: 0;
-  padding: 3px 0;
-  width: 180px;
-}
-
-search input[type="submit"]
-{
-  background: #CCCCCC url(path/to/image.jpg);
-  border: 0 none;
-  height: 1.5em;
-  line-height: 1.5em;
-  margin: 0;
-  padding: 3px 0;
-  text-indent: 100px;
-  width: 20px;
-}
-
 /* Change the color of links on hover */
 ul, li, a:hover {
     color: #62BEC1;
