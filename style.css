@@ -6,7 +6,7 @@ ul, li, a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1em;
     font-family: bellaboo; 
 }
 
@@ -17,10 +17,11 @@ html {
 
 /* Storefront Name */
 h1 {
-    font-size: 70px;
-    color: #404e4d;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-size: 4.5em;
+    color: #646881;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-h1 grace {
-    font-family: 
+h1.grace {
+    font-family: 'Autumn Chant';
+    color: #5AD2F4;
 }
