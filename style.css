@@ -1,5 +1,5 @@
 /* Navigation Bar */
-.navigation a {
+ul, li, a{
     list-style: none;
     float: left;
     color: #404e4d;
