@@ -50,3 +50,9 @@ input[type=text] {
 ul, li, a:hover {
     color: #62BEC1;
   }
+
+  /* Style the "active" element to highlight the current page */
+ul, li, a.active {
+    color: #5AD2F4;
+    text-emphasis: strong;
+}
