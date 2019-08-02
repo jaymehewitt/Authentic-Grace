@@ -8,13 +8,13 @@ h1 {
     font-size: 4.5em;
     color: #646881;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 20px 20px 1px 20px;
+    margin: 0px 20px 1px 20px;
     position: absolute;
 }
 h1.grace {
     font-family: 'Autumn Chant';
     color: #5AD2F4;
-    margin: 41px 20px 5px 15px;
+    margin: 21px 20px 5px 15px;
     position: absolute;
     font-size: 5em;
 }
@@ -33,21 +33,6 @@ ul, li, a {
     position: relative;
     overflow: hidden;
     background: transparent
-}
-
-/* Search Box */
-
-search {
-    float: right;
-    padding: 5px;
-    border: 1px
-    width 200px;
-    margin-top: 117px;
-    margin-right: 16px;
-    font-size: 1em;
-    font-family: 'bellaboo';
-    color: #404e4d;
-    position: relative;
 }
 
 /* Change the color of links on hover */
@@ -88,6 +73,7 @@ ul, li, a.active {
 
 .flexsearch--input {
   width: 100%;
+  color: #404e4d;
 }
 
 /***********************
@@ -95,6 +81,9 @@ ul, li, a.active {
  ***********************/
 .flexsearch {
   padding: 0 25px 0 100px; /* Padding for other horizontal elements */
+  margin-top: 30px;
+  margin-left: 200px;
+  z-index: 1;
 }
 
 .flexsearch--input {
@@ -102,17 +91,17 @@ ul, li, a.active {
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
  	height: 30px;
-    padding: 0 46px 0 10px;
+  padding: 0 46px 0 10px;
 	border-color: #888;
-    border-radius: 35px; /* (height/2) + border-width */
-    border-style: solid;
+  border-radius: 35px; /* (height/2) + border-width */
+  border-style: solid;
 	border-width: 5px;
-    margin-top: 15px;
-    color: #404e4d;
-    font-family: 'bellaboo', sans-serif;
+  margin-top: 15px;
+  color: #404e4d;
+  font-family: 'bellaboo', sans-serif;
 	font-size: 15px;
 	-webkit-appearance: none;
-	-moz-appearance: none;
+  -moz-appearance: none;
 }
 	
 .flexsearch--submit {
