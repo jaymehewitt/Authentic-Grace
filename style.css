@@ -164,8 +164,9 @@ ul, li, a:hover {
 ul, li, a.active {
     color: white;
     text-decoration: bold;
-
-  /*Nav Bar Container*/
+}
+  
+/*Nav Bar Container*/
  .navigation {
      height:200px;
  }
