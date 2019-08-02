@@ -32,7 +32,8 @@ ul, li, a {
     margin: 50px 5px;
     position: relative;
     overflow: hidden;
-    background: transparent
+    background: transparent;
+    z-index: .5;
 }
 
 /* Change the color of links on hover */
@@ -44,6 +45,7 @@ ul, li, a:hover {
 ul, li, a.active {
     color: white;
     text-decoration: bold;
+    z-index: .5;
 }
 
 @import "compass/css3";
@@ -80,10 +82,11 @@ ul, li, a.active {
  * Configurable Styles *
  ***********************/
 .flexsearch {
-  padding: 0 25px 0 100px; /* Padding for other horizontal elements */
-  margin-top: 30px;
-  margin-left: 200px;
+  padding: 0 25px 0 25px; /* Padding for other horizontal elements */
+  margin-top: 10px;
+  margin-left: 50px;
   z-index: 1;
+  float: right;
 }
 
 .flexsearch--input {
