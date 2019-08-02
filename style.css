@@ -69,7 +69,7 @@ ul, li, a.active {
 .flexsearch--wrapper {
 	height: auto;
 	width: auto;
-	max-width: 100%;
+	max-width: 20%;
 	overflow: hidden;
 	background: transparent;
 	margin: 0;
@@ -94,7 +94,7 @@ ul, li, a.active {
  * Configurable Styles *
  ***********************/
 .flexsearch {
-  padding: 0 25px 0 200px; /* Padding for other horizontal elements */
+  padding: 0 25px 0 100px; /* Padding for other horizontal elements */
 }
 
 .flexsearch--input {
@@ -110,7 +110,7 @@ ul, li, a.active {
     margin-top: 15px;
     color: #404e4d;
     font-family: 'bellaboo', sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
@@ -126,11 +126,12 @@ ul, li, a.active {
   border: none;
 	margin-top: 20px; /* margin-top + border-width */
   margin-right: 5px; /* border-width */
+  margin-bottom: 20px;
 	background: transparent;
   color: #404e4d;
   font-family: 'Bellaboo', sans-serif;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .flexsearch--input:focus {
