@@ -88,6 +88,7 @@ ul, li, a.active {
 
 .flexsearch--input {
   width: 100%;
+  color: #404e4d;
 }
 
 /***********************
@@ -102,17 +103,17 @@ ul, li, a.active {
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
  	height: 30px;
-    padding: 0 46px 0 10px;
+  padding: 0 46px 0 10px;
 	border-color: #888;
-    border-radius: 35px; /* (height/2) + border-width */
-    border-style: solid;
+  border-radius: 35px; /* (height/2) + border-width */
+  border-style: solid;
 	border-width: 5px;
-    margin-top: 15px;
-    color: #404e4d;
-    font-family: 'bellaboo', sans-serif;
+  margin-top: 15px;
+  color: #404e4d;
+  font-family: 'bellaboo', sans-serif;
 	font-size: 15px;
 	-webkit-appearance: none;
-	-moz-appearance: none;
+  -moz-appearance: none;
 }
 	
 .flexsearch--submit {
