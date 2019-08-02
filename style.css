@@ -35,21 +35,6 @@ ul, li, a {
     background: transparent
 }
 
-/* Search Box */
-
-search {
-    float: right;
-    padding: 5px;
-    border: 1px
-    width 200px;
-    margin-top: 117px;
-    margin-right: 16px;
-    font-size: 1em;
-    font-family: 'bellaboo';
-    color: #404e4d;
-    position: relative;
-}
-
 /* Change the color of links on hover */
 ul, li, a:hover {
     color: #62BEC1;
