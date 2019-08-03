@@ -2,47 +2,47 @@
 <html lang="en-US">
 
 <head>
-    <title>Authentic Grace</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="images/authenticgracelogo.png" />
-    <script src="https://kit.fontawesome.com/AuthenticGrace.js"></script>
+  <title>Authentic Grace</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="images/authenticgracelogo.png" />
+  <script src="https://kit.fontawesome.com/AuthenticGrace.js"></script>
 
 </head>
 
 <header>
-    <!--Storefront name-->
-    <h1>Authentic</h1>
-    <h1 class="grace">grace</h1>
-    
-    <!--Navigation bar-->
+  <!--Storefront name-->
+  <h1>Authentic</h1>
+  <h1 class="grace">grace</h1>
 
-    <div class="navigation">
-        <li><a class="active" href="#aboutus">About Us</a></li>
-        <li><a href="#tops">Tops</a></li>
-        <li><a href="#bottoms">Bottoms</a></li>
-        <li><a href="#accessories">Accessories</a></li>
-        <li><a href="#shoes">Shoes</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+  <!--Navigation bar-->
+
+  <div class="navigation">
+    <li><a class="active" href="#aboutus">About Us</a></li>
+    <li><a href="#tops">Tops</a></li>
+    <li><a href="#bottoms">Bottoms</a></li>
+    <li><a href="#accessories">Accessories</a></li>
+    <li><a href="#shoes">Shoes</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </div>
+
+  <!--Search bar-->
+  <div class="flexsearch">
+    <div class="flexsearch--wrapper">
+      <form class="flexsearch--form" action="#" method="post">
+        <div class="flexsearch--input-wrapper">
+          <input class="flexsearch--input" type="search" placeholder="search">
+        </div>
+        <input class="flexsearch--submit" type="submit" value="&#10140;" />
+      </form>
     </div>
-    
-   <!--Search bar-->
-    <div class="flexsearch">
-		<div class="flexsearch--wrapper">
-			<form class="flexsearch--form" action="#" method="post">
-				<div class="flexsearch--input-wrapper">
-					<input class="flexsearch--input" type="search" placeholder="search">
-				</div>
-				<input class="flexsearch--submit" type="submit" value="&#10140;"/>
-			</form>
-		</div>
-    </div>
-    
+  </div>
+
 </header>
 
 <body>
-    <!-- Slideshow container -->
-<div class="slideshow-container">
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
@@ -50,63 +50,63 @@
       <img src="images/pic01.jpg" style="width:100%">
       <div class="text">Caption Text</div>
     </div>
-  
+
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
       <img src="images/pic02.jpg" style="width:100%">
       <div class="text">Caption Two</div>
     </div>
-  
+
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
       <img src="images/pic03.jpg" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
-  
+
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
-  
+
   <!-- The dots/circles -->
   <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-    
+
   <script>
-  var slideIndex = 1;
-showSlides(slideIndex);
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
-</script>
-    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
 </body>
 
 <footer></footer>
