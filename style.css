@@ -3,7 +3,10 @@ html {
     background-color: #E3DBDB;
 }
 
-/* Storefront Name */
+/***************/
+* Storefront Name *
+/***************/
+
 h1 {
     font-size: 4.5em;
     color: #646881;
@@ -19,7 +22,10 @@ h1.grace {
     font-size: 5em;
 }
 
-/* Navigation Bar */
+/***************/
+* Navigation Bar *
+/***************/
+
 ul, li, a {
     list-style: none;
     float: left;
@@ -41,18 +47,37 @@ ul, li, a:hover {
     color: #62BEC1;
   }
 
-  /* Style the "active" element to highlight the current page */
+/* Style the "active" element to highlight the current page */
 ul, li, a.active {
     color: white;
     text-decoration: bold;
     z-index: .5;
 }
 
+/* Change the color of links on hover */
+ul, li, a:hover {
+  color: #62BEC1;
+  background: transparent;
+}
+
+/* Style the "active" element to highlight the current page */
+ul, li, a.active {
+  color: white;
+  text-decoration: bold;
+  background: transparent;
+}
+
+/*Nav Bar Container*/
+.navigation {
+   height:200px;
+   border-bottom:1px solid black;
+}
+
 @import "compass/css3";
 
-/***********************
- * Essential Structure *
- ***********************/
+/**********************************/
+ * Flexsearch Essential Structure *
+/*********************************/
 .flexsearch--wrapper {
 	height: auto;
 	width: auto;
@@ -78,9 +103,10 @@ ul, li, a.active {
   color: #404e4d;
 }
 
-/***********************
- * Configurable Styles *
- ***********************/
+/**********************************/
+ * Flexsearch Configurable Styles *
+ /*********************************/
+
 .flexsearch {
   padding: 10px 25px 0 25px; /* Padding for other horizontal elements */
   margin-top: 10px;
@@ -147,24 +173,9 @@ input:-moz-placeholder {
   color: #888
 }
 
-/* Change the color of links on hover */
-ul, li, a:hover {
-    color: #62BEC1;
-    background: transparent;
-  }
-
-  /* Style the "active" element to highlight the current page */
-ul, li, a.active {
-    color: white;
-    text-decoration: bold;
-    background: transparent;
-}
-
-  /*Nav Bar Container*/
- .navigation {
-     height:200px;
-     border-bottom:1px solid black;
- }
+/************/
+* Slideshow *
+/************/
 
 /*Slide Show*/
 .display-container {
@@ -270,21 +281,30 @@ ul, li, a.active {
   to {opacity: 1}
   }
 
-  /*Shopping Categories*/
+  /*********************/
+ * Shopping Categories *
+ /**********************/
+
   .categories {
     height:200px;
     border:1px solid black;
     margin-bottom:5px;
   }
 
-  /*Testimonials*/
+  /*************/
+ * Testimonials *
+ /**************/
+
   .testimonials {
     height:200px;
     border:1px solid red;
     margin-bottom:5px;
   }
 
-   /*Footer*/
+ /*********/
+ * Footer *
+ /*********/
+
    footer {
     height: 200px;
     border:1px solid hotpink;
