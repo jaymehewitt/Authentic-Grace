@@ -56,7 +56,7 @@ ul, li, a.active {
 .flexsearch--wrapper {
 	height: auto;
 	width: auto;
-	max-width: 20%;
+	max-width: 100%;
 	overflow: hidden;
 	background: transparent;
 	margin: 0;
@@ -82,9 +82,9 @@ ul, li, a.active {
  * Configurable Styles *
  ***********************/
 .flexsearch {
-  padding: 0 25px 0 25px; /* Padding for other horizontal elements */
+  padding: 10px 25px 0 25px; /* Padding for other horizontal elements */
   margin-top: 10px;
-  margin-left: 300px;
+  margin-left: 1000px;
   z-index: 1;
 }
 
