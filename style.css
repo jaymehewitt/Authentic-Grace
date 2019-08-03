@@ -281,4 +281,12 @@ ul, li, a.active {
   .testimonials {
     height:200px;
     border:1px solid red;
+    margin-bottom:5px;
+  }
+
+   /*Footer*/
+   footer {
+    height: 200px;
+    border:1px solid hotpink;
+    margin-bottom:5px;
   }
