@@ -159,10 +159,11 @@ ul, li, a.active {
     text-decoration: bold;
     background: transparent;
 }
-  
-/*Nav Bar Container*/
+
+  /*Nav Bar Container*/
  .navigation {
-     height:200px;
+     height:2`00px;
+     border-bottom:1px solid black;
  }
 
 /*Slide Show*/
@@ -173,11 +174,12 @@ ul, li, a.active {
 .myslides {
   background-color:#ffffff;
 }
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 750px;
   position: relative;
   margin: auto;
 }
@@ -193,7 +195,7 @@ ul, li, a.active {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: 60px;
   padding: 16px;
   color: white;
   font-weight: bold;
