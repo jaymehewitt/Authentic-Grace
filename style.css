@@ -169,7 +169,7 @@ ul, li, a.active {
 
   /*Nav Bar Container*/
  .navigation {
-     height:2`00px;
+     height:200px;
      border-bottom:1px solid black;
  }
 
@@ -276,4 +276,17 @@ ul, li, a.active {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+  }
+
+  /*Shopping Categories*/
+  .categories {
+    height:200px;
+    border:1px solid black;
+    margin-bottom:5px;
+  }
+
+  /*Testimonials*/
+  .testimonials {
+    height:200px;
+    border:1px solid red;
   }
