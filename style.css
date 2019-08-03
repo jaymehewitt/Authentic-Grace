@@ -8,13 +8,13 @@ h1 {
     font-size: 4.5em;
     color: #646881;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 20px 20px 1px 20px;
+    margin: 0px 20px 1px 20px;
     position: absolute;
 }
 h1.grace {
     font-family: 'Autumn Chant';
     color: #5AD2F4;
-    margin: 41px 20px 5px 15px;
+    margin: 21px 20px 5px 15px;
     position: absolute;
     font-size: 5em;
 }
@@ -32,22 +32,8 @@ ul, li, a {
     margin: 50px 5px;
     position: relative;
     overflow: hidden;
-    background: transparent
-}
-
-/* Search Box */
-
-search {
-    float: right;
-    padding: 5px;
-    border: 1px
-    width 200px;
-    margin-top: 117px;
-    margin-right: 16px;
-    font-size: 1em;
-    font-family: 'bellaboo';
-    color: #404e4d;
-    position: relative;
+    background: transparent;
+    z-index: .5;
 }
 
 /* Change the color of links on hover */
@@ -59,6 +45,7 @@ ul, li, a:hover {
 ul, li, a.active {
     color: white;
     text-decoration: bold;
+    z-index: .5;
 }
 
 @import "compass/css3";
@@ -69,7 +56,7 @@ ul, li, a.active {
 .flexsearch--wrapper {
 	height: auto;
 	width: auto;
-	max-width: 100%;
+	max-width: 20%;
 	overflow: hidden;
 	background: transparent;
 	margin: 0;
@@ -88,13 +75,17 @@ ul, li, a.active {
 
 .flexsearch--input {
   width: 100%;
+  color: #404e4d;
 }
 
 /***********************
  * Configurable Styles *
  ***********************/
 .flexsearch {
-  padding: 0 25px 0 200px; /* Padding for other horizontal elements */
+  padding: 0 25px 0 25px; /* Padding for other horizontal elements */
+  margin-top: 10px;
+  margin-left: 300px;
+  z-index: 1;
 }
 
 .flexsearch--input {
@@ -102,35 +93,36 @@ ul, li, a.active {
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
  	height: 30px;
-    padding: 0 46px 0 10px;
+  padding: 0 46px 0 10px;
 	border-color: #888;
-    border-radius: 35px; /* (height/2) + border-width */
-    border-style: solid;
+  border-radius: 35px; /* (height/2) + border-width */
+  border-style: solid;
 	border-width: 5px;
-    margin-top: 15px;
-    color: #404e4d;
-    font-family: 'bellaboo', sans-serif;
-	font-size: 20px;
+  margin-top: 15px;
+  color: #404e4d;
+  font-family: 'bellaboo', sans-serif;
+	font-size: 15px;
 	-webkit-appearance: none;
-	-moz-appearance: none;
+  -moz-appearance: none;
 }
 	
 .flexsearch--submit {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 	top: 0;
 	display: block;
 	width: 30px;
 	height: 30px;
-    padding: 0;
-    border: none;
+  padding: 0;
+  border: none;
 	margin-top: 20px; /* margin-top + border-width */
-    margin-right: 5px; /* border-width */
+  margin-right: 5px; /* border-width */
+  margin-bottom: 20px;
 	background: transparent;
-    color: #404e4d;
-    font-family: 'Bellaboo', sans-serif;
-    font-size: 40px;
-    line-height: 60px;
+  color: #404e4d;
+  font-family: 'Bellaboo', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .flexsearch--input:focus {
@@ -158,13 +150,14 @@ input:-moz-placeholder {
 /* Change the color of links on hover */
 ul, li, a:hover {
     color: #62BEC1;
+    background: transparent;
   }
 
   /* Style the "active" element to highlight the current page */
 ul, li, a.active {
     color: white;
     text-decoration: bold;
-
+    background: transparent;
 }
 
   /*Nav Bar Container*/
@@ -172,7 +165,6 @@ ul, li, a.active {
      height:200px;
      border-bottom:1px solid black;
  }
-
 
 /*Slide Show*/
 .display-container {
