@@ -122,9 +122,9 @@ ul, li, a.active {
 .flexsearch {
   padding: 10px 25px 0 25px; /* Padding for other horizontal elements */
   margin-top: 10px;
-  margin-left: 1000px;
   z-index: 1;
   display: inline-block;
+  width: 45%;
 }
 
 .flexsearch--input {
