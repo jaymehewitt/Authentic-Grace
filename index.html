@@ -3,49 +3,49 @@
 
 <head>
 
-    <title>Authentic Grace</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="images/assets/authenticgracelogo.png" />
-    <script src="https://kit.fontawesome.com/AuthenticGrace.js"></script>
+  <title>Authentic Grace</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="images/assets/authenticgracelogo.png" />
+  <script src="https://kit.fontawesome.com/AuthenticGrace.js"></script>
 
 </head>
 
 <header>
 
-    <!--Storefront name-->
-    <h1>Authentic</h1>
-    <h1 class="grace">grace</h1>
-    
-    <!--Search bar-->
-    <div class="flexsearch">
-      <div class="flexsearch--wrapper">
-        <form class="flexsearch--form" action="#" method="post">
-          <div class="flexsearch--input-wrapper">
-            <input class="flexsearch--input" type="search" placeholder="search">
-          </div>
-          <input class="flexsearch--submit" type="submit" value="&#10140;"/>
-        </form>
-      </div>
-      </div>
-    
-      
-      <!--Navigation bar-->
+  <!--Storefront name-->
+  <h1>Authentic</h1>
+  <h1 class="grace">grace</h1>
 
-    <div class="navigation">
-        <li><a class="active" href="#aboutus">About Us</a></li>
-        <li><a href="#tops">Tops</a></li>
-        <li><a href="#bottoms">Bottoms</a></li>
-        <li><a href="#flirty">Flirty</a></li>
-        <li><a href="#accessories">Accessories</a></li>
-        <li><a href="#shoes">Shoes</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+  <!--Search bar-->
+  <div class="flexsearch">
+    <div class="flexsearch--wrapper">
+      <form class="flexsearch--form" action="#" method="post">
+        <div class="flexsearch--input-wrapper">
+          <input class="flexsearch--input" type="search" placeholder="search">
+        </div>
+        <input class="flexsearch--submit" type="submit" value="&#10140;" />
+      </form>
     </div>
+  </div>
+
+
+  <!--Navigation bar-->
+
+  <div class="navigation">
+    <li><a class="active" href="#aboutus">About Us</a></li>
+    <li><a href="#tops">Tops</a></li>
+    <li><a href="#bottoms">Bottoms</a></li>
+    <li><a href="#flirty">Flirty</a></li>
+    <li><a href="#accessories">Accessories</a></li>
+    <li><a href="#shoes">Shoes</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </div>
 </header>
 
 <body>
-    
+
 
   <!-- Slideshow container -->
   <div class="slideshow-container">
@@ -82,7 +82,7 @@
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
 
-<!--Slideshow JS-->
+  <!--Slideshow JS-->
   <script>
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -117,15 +117,49 @@
   <!--Shopping Categories-->
   <div class="categories">Categories- products or what's new</div>
 
-   <!--Testimonials-->
-   <div class="testimonials">What our customers say</div>
+  <!--Testimonials-->
+  <div class="testimonials-container">What our customers say
+      <br>
+      <!--img src="images/slideshow/testimonial1.png" style="width:50%">-->
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides2 fade">
+      <img src="images/slideshow/testimonial1.png" style="width:100%">
+    </div>
 
+    <div class="mySlides2 fade">
+      <img src="images/slideshow/pic02.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides2 fade">
+      <img src="images/slideshow/pic03.jpg" style="width:100%">
+    </div>
+    </div>
+    
+  <!--Testimonials Automatic Slideshow JS-->
+  <script>
+    var slideIndexAuto = 0;
+    showSlidesAuto();
+
+    function showSlidesAuto() {
+      var iAuto;
+      var slidesAuto = document.getElementsByClassName("mySlides2");
+      for (iAuto = 0; iAuto < slidesAuto.length; iAuto++) {
+        slidesAuto[iAuto].style.display = "none";  
+      }
+      slideIndexAuto++;
+      if (slideIndexAuto > slidesAuto.length) {slideIndexAuto = 1}    
+      
+      slidesAuto[slideIndexAuto-1].style.display = "block";  
+      
+      setTimeout(showSlidesAuto, 6000); // Change image every 6 seconds
+    }
+  </script>
 </body>
 
 <footer>
-   <div class="footer">Contact Us
-   Social Media
-   Google Maps
+  <div class="footer">Contact Us
+    Social Media
+    Google Maps
   </div>
 </footer>
 

@@ -278,10 +278,18 @@ ul, li, a.active {
   }
 
   /*Testimonials*/
-  .testimonials {
-    height:200px;
-    border:1px solid red;
-    margin-bottom:5px;
+  .testimonials-container {
+    max-width: 750px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides2 {
+    display: none;
+  }
+
+  .mySlides2 {
+    background-color:#ffffff;
   }
 
    /*Footer*/
