@@ -16,6 +16,7 @@ html {
 .storefrontname {
   white-space: nowrap;
   overflow-x: auto;
+  width: 30%;
 }
 
 h1 {
@@ -32,6 +33,184 @@ h1.grace {
     margin: 21px 20px 5px 15px;
     position: absolute;
     font-size: 5em;
+}
+
+@import "compass/css3";
+
+/*************************/
+* Login Essential Structure*
+/*************************/
+
+ .flexsearch--wrapper {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	overflow: hidden;
+	background: transparent;
+	margin: 0;
+  position: static;
+}
+	
+.flexsearch--form {
+	overflow: hidden;
+  position: relative;
+}
+	
+.flexsearch--input-wrapper {
+	padding: 0 0 0 0; /* Right padding for submit button width */
+  overflow: hidden;
+}
+
+.login--input {
+  width: 100%;
+  color: #404e4d;
+}
+
+/**********************************/
+ * Login Configurable Styles *
+ /*********************************/
+
+.topnav {
+  padding: 10px 25px 0 25px; /* Padding for other horizontal elements */
+  margin-top: 10px;
+  z-index: 1;
+  display: inline-block;
+  width: 30%;
+}
+
+.login--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+   height: 30px;
+   width: 30px;
+  padding: 0 46px 0 10px;
+	border-color: #888;
+  border-radius: 35px; /* (height/2) + border-width */
+  border-style: solid;
+	border-width: 5px;
+  margin-top: 5px;
+  margin-left: 980px;
+  color: #404e4d;
+  font-family: 'bellaboo', sans-serif;
+	font-size: 15px;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  line-height: 1;
+  vertical-align: top;
+}
+
+.login--input:focus {
+  outline: none;
+  border-color: #62BEC1;
+}
+
+::-webkit-input-placeholder {
+	color: #888;  
+}
+
+
+/**********************************/
+ * Flexsearch Essential Structure *
+/*********************************/
+.flexsearch--wrapper {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	overflow: hidden;
+	background: transparent;
+	margin: 0;
+	position: static;
+}
+	
+.flexsearch--form {
+	overflow: hidden;
+	position: relative;
+}
+	
+.flexsearch--input-wrapper {
+	padding: 0 66px 0 0; /* Right padding for submit button width */
+	overflow: hidden;
+}
+
+.flexsearch--input {
+  width: 100%;
+  color: #404e4d;
+}
+
+/**********************************/
+ * Flexsearch Configurable Styles *
+ /*********************************/
+
+.topnav {
+  padding: 10px 25px 0 25px; /* Padding for other horizontal elements */
+  margin-top: 10px;
+  z-index: 1;
+  display: inline-block;
+  width: 30%;
+}
+
+.flexsearch--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+   height: 30px;
+   width: 100px;
+  padding: 0 46px 0 10px;
+	border-color: #888;
+  border-radius: 35px; /* (height/2) + border-width */
+  border-style: solid;
+	border-width: 5px;
+  margin-top: 15px;
+  margin-left: 1095px;
+  color: #404e4d;
+  font-family: 'bellaboo', sans-serif;
+	font-size: 15px;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  line-height: 1;
+  vertical-align: top;
+}
+	
+.flexsearch--submit {
+  position: absolute;
+  right: 0;
+	top: 0;
+	display: block;
+	width: 30px;
+	height: 30px;
+  padding: 0;
+  border: none;
+	margin-top: 20px; /* margin-top + border-width */
+  margin-right: 5px; /* border-width */
+  margin-bottom: 20px;
+	background: transparent;
+  color: #404e4d;
+  font-family: 'Bellaboo', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.flexsearch--input:focus {
+  outline: none;
+  border-color: #62BEC1;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+ 	color: #5AD2F4; 
+}
+
+.flexsearch--submit:hover {
+  color: #62BEC1;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #888;  
+}
+
+input:-moz-placeholder {
+  color: #888
 }
 
 /***************/
@@ -83,109 +262,6 @@ ul, li, a.active {
 .navigation {
    height: 100px;
    border-bottom:1px solid black;
-}
-
-@import "compass/css3";
-
-/**********************************/
- * Flexsearch Essential Structure *
-/*********************************/
-.flexsearch--wrapper {
-	height: auto;
-	width: auto;
-	max-width: 100%;
-	overflow: hidden;
-	background: transparent;
-	margin: 0;
-	position: static;
-}
-	
-.flexsearch--form {
-	overflow: hidden;
-	position: relative;
-}
-	
-.flexsearch--input-wrapper {
-	padding: 0 66px 0 0; /* Right padding for submit button width */
-	overflow: hidden;
-}
-
-.flexsearch--input {
-  width: 100%;
-  color: #404e4d;
-}
-
-/**********************************/
- * Flexsearch Configurable Styles *
- /*********************************/
-
-.flexsearch {
-  padding: 10px 25px 0 25px; /* Padding for other horizontal elements */
-  margin-top: 10px;
-  z-index: 1;
-  display: inline-block;
-  width: 45%;
-}
-
-.flexsearch--input {
-  -webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-   height: 30px;
-   width: 200px;
-  padding: 0 46px 0 10px;
-	border-color: #888;
-  border-radius: 35px; /* (height/2) + border-width */
-  border-style: solid;
-	border-width: 5px;
-  margin-top: 15px;
-  margin-left: 995px;
-  color: #404e4d;
-  font-family: 'bellaboo', sans-serif;
-	font-size: 15px;
-	-webkit-appearance: none;
-  -moz-appearance: none;
-}
-	
-.flexsearch--submit {
-  position: absolute;
-  right: 0;
-	top: 0;
-	display: block;
-	width: 30px;
-	height: 30px;
-  padding: 0;
-  border: none;
-	margin-top: 20px; /* margin-top + border-width */
-  margin-right: 5px; /* border-width */
-  margin-bottom: 20px;
-	background: transparent;
-  color: #404e4d;
-  font-family: 'Bellaboo', sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-}
-
-.flexsearch--input:focus {
-  outline: none;
-  border-color: #62BEC1;
-}
-
-.flexsearch--input:focus.flexsearch--submit {
- 	color: #5AD2F4; 
-}
-
-.flexsearch--submit:hover {
-  color: #62BEC1;
-  cursor: pointer;
-}
-
-::-webkit-input-placeholder {
-	color: #888;  
-}
-
-input:-moz-placeholder {
-  color: #888
 }
 
 /************/
