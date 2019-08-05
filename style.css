@@ -235,16 +235,13 @@ ul, li, a {
     z-index: .5;
 }
 
-/* Change the color of links on hover */
-ul, li, a:hover {
-    color: #62BEC1;
-  }
 
 /* Style the "active" element to highlight the current page */
 ul, li, a.active {
     color: white;
     text-decoration: bold;
     z-index: .5;
+    background: transparent;
 }
 
 /* Change the color of links on hover */
@@ -253,15 +250,8 @@ ul, li, a:hover {
   background: transparent;
 }
 
-/* Style the "active" element to highlight the current page */
-ul, li, a.active {
-  color: white;
-  text-decoration: bold;
-  background: transparent;
-}
-
 /*Nav Bar Container*/
-.navigation {
+.navigation-container {
    height: 100px;
    border-bottom:1px solid black;
 }
