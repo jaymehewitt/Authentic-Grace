@@ -76,6 +76,7 @@ h1.grace {
   z-index: 1;
   display: inline-block;
   width: 30%;
+  position: absolute;
 }
 
 .login--input {
@@ -88,8 +89,8 @@ h1.grace {
 	border-color: #888;
   border-radius: 35px; /* (height/2) + border-width */
   border-style: solid;
-	border-width: 5px;
-  margin-top: 5px;
+  border-width: 5px;
+  margin-top: 15px;
   margin-left: 980px;
   color: #404e4d;
   font-family: 'bellaboo', sans-serif;
@@ -98,6 +99,7 @@ h1.grace {
   -moz-appearance: none;
   line-height: 1;
   vertical-align: top;
+  position: absolute;
 }
 
 .login--input:focus {
