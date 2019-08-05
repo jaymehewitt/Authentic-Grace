@@ -383,7 +383,6 @@ ul, li, a.active {
     margin-bottom:5px;
   }
 
-<<<<<<< HEAD
   /*Testimonials*/
   .testimonials-container {
     max-width: 750px;
@@ -397,16 +396,6 @@ ul, li, a.active {
 
   .mySlides2 {
     background-color:#ffffff;
-=======
-  /*************/
- * Testimonials *
- /**************/
-
-  .testimonials {
-    height:200px;
-    border:1px solid red;
-    margin-bottom:5px;
->>>>>>> 41ef184c0cab398c9eaf94db55dc20881150ab33
   }
 
  /*********/
