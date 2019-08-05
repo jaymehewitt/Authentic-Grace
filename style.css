@@ -3,6 +3,11 @@ html {
     background-color: #E3DBDB;
 }
 
+@font-face {
+  font-family: "bellaboo";
+  src: url("fonts/bellaboo.woff") format('woff');
+}
+
 /***************/
 * Storefront Name *
 /***************/
