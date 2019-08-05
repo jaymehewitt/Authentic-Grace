@@ -399,12 +399,66 @@ ul, li, a.active {
     background-color:#E3DBDB;
   }
 
+  /* Fading animation */
+.fade2 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
  /*********/
- * Footer *
+ /* Footer*/
  /*********/
 
   footer {
     height: 200px;
     border:1px solid hotpink;
     margin-bottom:5px;
+    display:inline-block;
+  }
+
+  footer img {
+    width:auto;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .signup {
+    background-color: #239b76;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+  }
+  
+  .twitter {
+    background-color: #55acee;
+  }
+
+  .instagram {
+    background-color: #E0D7C8;
+  }
+  
+  .btn-wrapper {
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  .fa {
+    margin-right:5px;
   }
