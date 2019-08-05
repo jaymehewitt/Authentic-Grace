@@ -380,9 +380,32 @@ ul, li, a.active {
  /**********************/
 
   .categories {
-    height:300px;
     border:1px solid black;
     margin-bottom:5px;
+    position: relative;
+  }
+
+  figure {
+    display: inline-block;
+  }
+
+  .category-img {
+    width: 20%;
+    margin-top: 30px;
+    height: auto;
+    border: solid #404e4d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    transition: 0.3;
+  }
+
+  .category-img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+  }
+
+  .figcaption {
+    margin-top: 5px;
+    color: white;
+    position: absolute;
   }
 
   /*Testimonials*/
