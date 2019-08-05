@@ -378,19 +378,25 @@ ul, li, a.active {
  /**********************/
 
   .categories {
-    height:200px;
+    height:300px;
     border:1px solid black;
     margin-bottom:5px;
   }
 
-  /*************/
- * Testimonials *
- /**************/
+  /*Testimonials*/
+  .testimonials-container {
+    max-width: 750px;
+    position: relative;
+    margin: auto;
+    border:1px solid black;
+  }
 
-  .testimonials {
-    height:200px;
-    border:1px solid red;
-    margin-bottom:5px;
+  .mySlides2 {
+    display: none;
+  }
+
+  .mySlides2 {
+    background-color:#E3DBDB;
   }
 
  /*********/
