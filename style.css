@@ -47,7 +47,6 @@ body {
   width: auto;
   position: relative;
   flex-flow: row-wrap;
-
 }
 
 .links {
@@ -128,7 +127,6 @@ body {
 
 .navbar-container a {
     list-style: none;
-    float: left;
     color: #404e4d;
     padding: 15px;
     text-decoration: none;
@@ -175,6 +173,7 @@ body {
   max-width: 750px;
   position: relative;
   margin: auto;
+  margin-top: 20px;
 }
 
 /* Hide the images by default */
@@ -267,16 +266,24 @@ body {
   /*********************/
  * Shopping Categories *
  /**********************/
-
-  .categories-container {
-    border: 1px black;
-    height: 200px;
-    margin: auto;
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+ 
+ .categories-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  width: 100%;
+  justify-content: space-evenly;
+  border: 1px black;
+  height: 200px;
+  margin: auto;
+  flex-wrap: wrap;
   }
+    .cards {
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
     
     .card {
       display: flex;
