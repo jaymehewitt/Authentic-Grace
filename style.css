@@ -23,14 +23,20 @@ body {
 /*********/
 
 /*Header Container*/
+.header {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
 .header-container {
-  height: 100px;
+  flex: 0 1 50%;
+  height: 150px;
   border-top: 10px;
   border-bottom: 1px solid black;
   display: inline-flex;
   flex-flow: row-wrap;
   width: 100%;
-  align-content: flex-start;
+  align-content: space-between;
   position: relative;
   border: 1px solid #fff;  /* For debugging */
 }
@@ -41,7 +47,8 @@ body {
   height: 150px;
   width: auto;
   position: relative;
-  flex: 0 1 50%;
+  flex-flow: row-wrap;
+
 }
 
 .links {
@@ -51,9 +58,7 @@ body {
   border: 1px solid #fff;  /* For debugging */
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap;
   width: 50%;
-  flex: 0 1 50%;
 }
 
 .fa fa-shopping-cart{
