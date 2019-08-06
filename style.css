@@ -23,7 +23,7 @@ body {
 /*********/
 
 /*Header Container*/
-.header {
+.header-container {
   height: 50px;
   border-top: 10px;
   border-bottom: 1px solid black;
@@ -41,30 +41,56 @@ body {
   flex: 0 1 50%;
 }
 
-/*Top Nav Container*/
-.topnav {
-  flex: 0 1 50%;
-  align-items: center;
-  height: 50px;
-  align-items: center;
-}
-<span style="font-size: 3em; color: #404e4d;">
-  <i class="fa fa-shopping-cart"></i>
-</span>
-
 .button {
- height: 30px;
+ height: 20px;
+ flex: 0 1 25%;
 }
-.button input {
-  border: solid 5px #717171;
-  padding: .5em;
-  border-radius: 30px;
-  font-family: Bellaboo;
+.button--input {
   font-size: .75em;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 30px;
+  width: 100px;
+  padding: 0 0px 0 10px;
+  border-color: #888;
+  border-radius: 35px; /* (height/2) + border-width */
+  border-style: solid;
+  border-width: 5px;
+  margin-top: 15px;
+  color: #404e4d;
+  font-family: 'bellaboo', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  line-height: 1;
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
 }
-.button input:hover{
-  border: solid 5px #5AD2F4;
+
+.button--input-wrapper {
+  padding: 0 44px 0 0; /* Right padding for submit button width */
+  overflow: hidden;
 }
+.button--input:hover{
+  border: solid 5px #62BEC1;
+}
+
+.button--submit {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin-top: 20px; /* margin-top + border-width */
+  margin-right: 5px; /* border-width */
+  margin-bottom: 20px;
+  color: #404e4d;
+  font-family: 'Bellaboo', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  background: transparent;
+ }
 
 /***************/
 * Navigation Bar *
