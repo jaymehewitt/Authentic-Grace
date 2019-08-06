@@ -437,12 +437,43 @@ ul, li, a:hover {
   footer {
     height: 200px;
     border:1px solid hotpink;
-    margin-bottom:5px;
+    margin:5px;
     display:inline-block;
+    width:100%;
+    padding-top:30px;
   }
 
   footer img {
     width:auto;
+    display:inline-block;
+  }
+
+  footer p {
+    font-size: 12px;
+    padding:0px;
+    margin:0px;
+  }
+
+  footer ul, li{
+    float: none;
+    color:black;
+    border:1px solid black;
+    padding:0px;
+    margin:0px;
+    font-size:12px;
+  }
+
+  .flex-container {
+    display: flex;
+    background-color:dodgerblue;
+    justify-content: space-evenly;
+  }
+
+  .child-container {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
   }
 
   .btn {
@@ -463,7 +494,6 @@ ul, li, a:hover {
   
   .facebook {
     background-color: #3b5998;
-    margin-right: 10px;
   }
   
   .twitter {
