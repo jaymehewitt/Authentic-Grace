@@ -60,9 +60,13 @@ body {
   width: 50%;
 }
 
-.fa fa-shopping-cart{
+.fa fa-shopping-cart {
   font-size: 3em; 
   color: #404e4d;
+}
+
+.fa-shopping-cart:hover{
+  color: #62BEC1;
 }
 
 .button--input {
