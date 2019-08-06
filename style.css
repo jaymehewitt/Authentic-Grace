@@ -444,14 +444,14 @@ ul, li, a:hover {
     margin:0px;
   }
 
-  footer ul, li{
+  /*footer ul, li{
     float: none;
     color:black;
-    border:1px solid black;
+    border:1px solid hotpink;
     padding:0px;
     margin:0px;
     font-size:12px;
-  }
+  }*?
 
   .flex-container {
     display: flex;
