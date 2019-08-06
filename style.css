@@ -415,9 +415,9 @@ ul, li, a:hover {
   /* Fading animation */
 .fade2 {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s;
+  -webkit-animation-duration: 3s;
   animation-name: fade;
-  animation-duration: 2.5s;
+  animation-duration: 3s;
 }
 
  /*********/
@@ -426,44 +426,61 @@ ul, li, a:hover {
 
   footer {
     height: 200px;
-    border:1px solid hotpink;
     margin:5px;
     display:inline-block;
     width:100%;
     padding-top:30px;
+    border: 1px solid hotpink;
+    font-family: open sans,helveticaneue-light,helveticaneuelight,helvetica neue light,helvetica neue,helvetica-neue,Helvetica,Arial,lucida grande,sans-serif;
   }
 
   footer img {
     width:auto;
-    display:inline-block;
+    /*centers image in container*/
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   footer p {
     font-size: 12px;
-    padding:0px;
+    padding:3px;
     margin:0px;
+    text-align: center;
   }
 
-  /*footer ul, li{
-    float: none;
-    color:black;
-    border:1px solid hotpink;
+  footer a {
+    font-size: 1em;
     padding:0px;
     margin:0px;
+    font-family: open sans,helveticaneue-light,helveticaneuelight,helvetica neue light,helvetica neue,helvetica-neue,Helvetica,Arial,lucida grande,sans-serif;
+  }
+  footer ul{
+    float: none;
+    margin:0;
+    padding:0;
+  }
+
+  footer li{
+    float: none;
+    color:black;
+    padding:5px;
+    margin:0px;
     font-size:12px;
-  }*/
+    font-family: open sans,helveticaneue-light,helveticaneuelight,helvetica neue light,helvetica neue,helvetica-neue,Helvetica,Arial,lucida grande,sans-serif;
+  }
 
   .flex-container {
     display: flex;
-    background-color:dodgerblue;
+    background-color:#E3DBDB;
     justify-content: space-evenly;
+    align-items:flex-start;
   }
 
   .child-container {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
+    background-color: #E3DBDB;
     font-size: 30px;
+    align-items:flex-start;
   }
 
   .btn {
@@ -478,20 +495,27 @@ ul, li, a:hover {
     opacity: 1;
   }
   
-  .signup {
-    background-color: #239b76;
+  .child-container-friends{
+    font-style:italic;
+    font-size:1.5em;
+    font-family:serif;
   }
   
   .facebook {
-    background-color: #3b5998;
+    background-color: #E3DBDB;
   }
   
   .twitter {
-    background-color: #55acee;
+    background-color: #E3DBDB;
   }
 
   .instagram {
-    background-color: #E0D7C8;
+    background-color: #E3DBDB;
+  }
+
+  
+  .envelope {
+    background-color: #E3DBDB;
   }
   
   .btn-wrapper {
