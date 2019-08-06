@@ -232,6 +232,10 @@ body {
     border: 1px black;
     height: 200px;
     margin: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
   }
     
     .card {
@@ -239,6 +243,7 @@ body {
       justify-content: space-between;
       flex-wrap: wrap;
       margin-bottom: 2em;
+      flex: 0 1 25%;
   }
 
   .category-img {
@@ -247,10 +252,7 @@ body {
     transition: 0.3;
     z-index: 1;
 	  width: 100%;
-    height: auto;
-    overflow-x: auto;
-    overflow-y: auto;
-    display: block;
+    height: 100%;
     align-content: top;
   }
 
