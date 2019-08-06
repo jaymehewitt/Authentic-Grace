@@ -29,27 +29,40 @@ body {
   border-bottom: 1px solid black;
   display: inline-flex;
   flex-flow: row-wrap;
-  width: 100%;
-  align-items: center;
-}
-
-.fa fa-shopping-cart{
-  flex: 0 1 25%;
+  width: 50%;
+  align-items: top;
+  position: absolute;
 }
 
 .storefrontname {
   margin-top: 15px;
+  margin-left: 15px;
   height: 150px;
   width: auto;
   position: relative;
   flex: 0 1 30%;
 }
 
-.button {
- height: 20px;
- flex: 0 1 25%;
+.links {
+  flex-flow: row-wrap;
+  position: relative;
+  display: inline-flex;
+  border: 1px solid #fff;  /* For debugging */
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 50%;
 }
+
+.fa fa-shopping-cart{
+  flex: 0 1 25%;
+  font-size: 3em; 
+  color: #404e4d;
+}
+
 .button--input {
+  margin-left: 20px
+  flex: 0 1 25%;
   font-size: .75em;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -105,12 +118,13 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   border-bottom: 1px solid black;
   width: 100%;
   padding: 20px;
+  justify-content: space-between
 }
 
 .navbar a {
