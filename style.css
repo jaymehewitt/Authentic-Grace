@@ -23,15 +23,22 @@ body {
 /*********/
 
 /*Header Container*/
+.header {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
 .header-container {
-  height: 50px;
+  flex: 0 1 50%;
+  height: 150px;
   border-top: 10px;
   border-bottom: 1px solid black;
   display: inline-flex;
   flex-flow: row-wrap;
-  width: 50%;
-  align-items: top;
-  position: absolute;
+  width: 100%;
+  align-content: space-between;
+  position: relative;
+  border: 1px solid #fff;  /* For debugging */
 }
 
 .storefrontname {
@@ -40,28 +47,29 @@ body {
   height: 150px;
   width: auto;
   position: relative;
-  flex: 0 1 30%;
+  flex-flow: row-wrap;
+
 }
 
 .links {
+  margin-left: auto;
   flex-flow: row-wrap;
   position: relative;
-  display: inline-flex;
   border: 1px solid #fff;  /* For debugging */
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap;
   width: 50%;
 }
 
 .fa fa-shopping-cart{
-  flex: 0 1 25%;
   font-size: 3em; 
   color: #404e4d;
+  margin-right: 15px;
 }
 
 .button--input {
-  margin-left: 20px
+  margin-left: 5px;
+  margin-right: 5px;
   flex: 0 1 25%;
   font-size: .75em;
   -webkit-box-sizing: content-box;
@@ -86,7 +94,7 @@ body {
 }
 
 .button--input-wrapper {
-  padding: 0 44px 0 0; /* Right padding for submit button width */
+  padding: 0 44px 0 0;
   overflow: hidden;
 }
 .button--input:hover{
