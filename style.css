@@ -33,12 +33,16 @@ body {
   align-items: center;
 }
 
+.fa fa-shopping-cart{
+  flex: 0 1 25%;
+}
+
 .storefrontname {
   margin-top: 15px;
   height: 150px;
   width: auto;
   position: relative;
-  flex: 0 1 50%;
+  flex: 0 1 30%;
 }
 
 .button {
@@ -77,8 +81,7 @@ body {
 }
 
 .button--submit {
-  position: relative;
-  display: inline-block;
+  position: absolute;
   width: 30px;
   height: 30px;
   border: none;
@@ -136,7 +139,7 @@ body {
 
 /* Change the color of links on hover */
 .navbar a:hover {
-  color: #5AD2F4;
+  color: #62BEC1;
   background: transparent;
   z-index: .5;
 }
