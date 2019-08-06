@@ -12,37 +12,26 @@
 
 </head>
 
-<header>
-
-    <!--Storefront logo-->
+  <div class="header">
+      <!--Storefront logo-->
     <img class="storefrontname" src="images/assets/authenticgracelogo_top.png" alt="Authentic Grace Top Logo">
-    
-    <!--Login button, Shopping cart, and Search bar--> 
-    <div class="topnav">
-      <div class="flexsearch--wrapper">
-        <span style="font-size: 3em; color: #404e4d;">
-          <i class="fa fa-shopping-cart"></i>
-        </span>
-        <input class="login--input" type="login" placeholder="Login">
-        <form class="flexsearch--form" action="#" method="post">
-          <div class="flexsearch--input-wrapper">
-            <input class="flexsearch--input" type="search" placeholder="search">
-          </div>
-          <input class="flexsearch--submit" type="submit" value="&#10140;">
-        </form>
-      </div>
+  <div class="topnav">
+    <div class="button">
+        <input type="search" placeholder="search..." />
+        <input type="login" placeholder="login" />
     </div>
+  </div>
+  </div>
 
   <!--Navigation bar-->
-
-  <div class="navigation-container">
-    <li><a class="active" href="#tops">Tops</a></li>
-    <li><a href="#bottoms">Bottoms</a></li>
-    <li><a href="#flirty">Flirty</a></li>
-    <li><a href="#accessories">Accessories</a></li>
-    <li><a href="#shoes">Shoes</a></li>
+  
+  <div class="navbar">
+    <a class="active" href="#tops">Tops</a>
+    <a href="#bottoms">Bottoms</a>
+    <a href="#flirty">Flirty</a>
+    <a href="#accessories">Accessories</a>
+    <a href="#shoes">Shoes</a>
   </div>
-</header>
 
 <body>
 
@@ -115,19 +104,25 @@
   </script>
 
   <!--Shopping Categories-->
-  <div class="categories">
-    <figure>
+  <div class="categories-container">
+    <section class="cards">
+    <figure class="card">
       <img class="category-img" src="images/clothing/flirty/glitterdress.jpg" alt="Glitter Dress">
       <figcaption class="caption">What's new!</figcaption>
     </figure>
-    <figure>
+    <figure class="card">
       <img class="category-img" src="images/clothing/tops/offshoulderruffletop.jpg" alt="Ruffle Top">
       <figcaption class="caption">Recommended Styles</figcaption>
     </figure>
-    <figure>
+    <figure class="card">
         <img class="category-img" src="images/clothing/flirty/blacklongsleeve.jpg" alt="Black Long Sleeve Dress">
         <figcaption class="caption">Last Chance Items</figcaption>
     </figure>
+    <figure class="card">
+        <img class="category-img" src="images/clothing/flirty/blacklongsleeve.jpg" alt="Black Long Sleeve Dress">
+        <figcaption class="caption">Last Chance Items</figcaption>
+    </figure>
+    </section>
   </div>
 
   <!--Testimonials-->
