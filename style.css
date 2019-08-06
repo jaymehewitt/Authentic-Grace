@@ -32,13 +32,12 @@ body {
   flex: 0 1 50%;
   height: 150px;
   border-top: 10px;
-  border-bottom: 1px solid black;
   display: inline-flex;
   flex-flow: row-wrap;
   width: 100%;
-  align-content: space-between;
+  align-content: space-around;
   position: relative;
-  border: 1px solid #fff;  /* For debugging */
+  margin-right: 15px;
 }
 
 .storefrontname {
@@ -53,18 +52,21 @@ body {
 
 .links {
   margin-left: auto;
+  margin-right: 15px;
   flex-flow: row-wrap;
   position: relative;
-  border: 1px solid #fff;  /* For debugging */
   display: flex;
   justify-content: flex-end;
   width: 50%;
 }
 
-.fa fa-shopping-cart{
+.fa fa-shopping-cart {
   font-size: 3em; 
   color: #404e4d;
-  margin-right: 15px;
+}
+
+.fa-shopping-cart:hover{
+  color: #62BEC1;
 }
 
 .button--input {
@@ -101,21 +103,6 @@ body {
   border: solid 5px #62BEC1;
 }
 
-.button--submit {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: none;
-  margin-top: 20px; /* margin-top + border-width */
-  margin-right: 5px; /* border-width */
-  margin-bottom: 20px;
-  color: #404e4d;
-  font-family: 'Bellaboo', sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-  background: transparent;
- }
-
 /***************/
 * Navigation Bar *
 /***************/
@@ -123,6 +110,11 @@ body {
 /*Nav Bar Container*/
 
 .navbar {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.navbar-container {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -131,20 +123,17 @@ body {
   align-items: center;
   border-bottom: 1px solid black;
   width: 100%;
-  padding: 20px;
-  justify-content: space-between
+  justify-content: flex-start;
 }
 
-.navbar a {
+.navbar-container a {
     list-style: none;
     float: left;
     color: #404e4d;
-    text-align: left;
-    padding: 10px 10px;
+    padding: 15px;
     text-decoration: none;
     font-size: 1em;
     font-family: bellaboo;
-    margin: 15px 5px;
     position: relative;
     overflow: hidden;
     background: transparent;
@@ -152,7 +141,7 @@ body {
 }
 
 /* Style the "active" element to highlight the current page */
-.navbar a:active {
+.navbar-container a:active {
     color: white;
     text-decoration: bold;
     background: transparent;
@@ -160,7 +149,7 @@ body {
 }
 
 /* Change the color of links on hover */
-.navbar a:hover {
+.navbar-container a:hover {
   color: #62BEC1;
   background: transparent;
   z-index: .5;
