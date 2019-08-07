@@ -24,46 +24,82 @@ body {
 
 /*Header Container*/
 .header {
-  height: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.header-container {
+  flex: 0 1 50%;
+  height: 150px;
   border-top: 10px;
-  border-bottom: 1px solid black;
   display: inline-flex;
   flex-flow: row-wrap;
   width: 100%;
-  align-items: center;
+  align-content: space-around;
+  position: relative;
+  margin-right: 15px;
 }
 
 .storefrontname {
   margin-top: 15px;
+  margin-left: 15px;
   height: 150px;
   width: auto;
   position: relative;
-  flex: 0 1 50%;
+  flex-flow: row-wrap;
 }
 
-/*Top Nav Container*/
-.topnav {
-  flex: 0 1 50%;
-  align-items: center;
-  height: 50px;
-  align-items: center;
+.links {
+  margin-left: auto;
+  margin-right: 15px;
+  flex-flow: row-wrap;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
 }
-<span style="font-size: 3em; color: #404e4d;">
-  <i class="fa fa-shopping-cart"></i>
-</span>
 
-.button {
- height: 30px;
+.fa fa-shopping-cart {
+  font-size: 3em; 
+  color: #404e4d;
 }
-.button input {
-  border: solid 5px #717171;
-  padding: .5em;
-  border-radius: 30px;
-  font-family: Bellaboo;
+
+.fa-shopping-cart:hover{
+  color: #62BEC1;
+}
+
+.button--input {
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 0 1 25%;
   font-size: .75em;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 30px;
+  width: 100px;
+  padding: 0 0px 0 10px;
+  border-color: #888;
+  border-radius: 35px; /* (height/2) + border-width */
+  border-style: solid;
+  border-width: 5px;
+  margin-top: 15px;
+  color: #404e4d;
+  font-family: 'bellaboo', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  line-height: 1;
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
 }
-.button input:hover{
-  border: solid 5px #5AD2F4;
+
+.button--input-wrapper {
+  padding: 0 44px 0 0;
+  overflow: hidden;
+}
+.button--input:hover{
+  border: solid 5px #62BEC1;
 }
 
 /***************/
@@ -73,27 +109,29 @@ body {
 /*Nav Bar Container*/
 
 .navbar {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.navbar-container {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   border-bottom: 1px solid black;
   width: 100%;
-  padding: 20px;
+  justify-content: flex-start;
 }
 
-.navbar a {
+.navbar-container a {
     list-style: none;
-    float: left;
     color: #404e4d;
-    text-align: left;
-    padding: 10px 10px;
+    padding: 15px;
     text-decoration: none;
     font-size: 1em;
     font-family: bellaboo;
-    margin: 15px 5px;
     position: relative;
     overflow: hidden;
     background: transparent;
@@ -101,7 +139,7 @@ body {
 }
 
 /* Style the "active" element to highlight the current page */
-.navbar a:active {
+.navbar-container a:active {
     color: white;
     text-decoration: bold;
     background: transparent;
@@ -109,8 +147,8 @@ body {
 }
 
 /* Change the color of links on hover */
-.navbar a:hover {
-  color: #5AD2F4;
+.navbar-container a:hover {
+  color: #62BEC1;
   background: transparent;
   z-index: .5;
 }
@@ -135,6 +173,7 @@ body {
   max-width: 750px;
   position: relative;
   margin: auto;
+  margin-top: 20px;
 }
 
 /* Hide the images by default */
@@ -227,18 +266,31 @@ body {
   /*********************/
  * Shopping Categories *
  /**********************/
-
-  .categories-container {
-    border: 1px black;
-    height: 200px;
-    margin: auto;
+ 
+ .categories-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  width: 100%;
+  justify-content: space-evenly;
+  border: 1px black;
+  height: 200px;
+  margin: auto;
+  flex-wrap: wrap;
   }
+    .cards {
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
     
     .card {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       margin-bottom: 2em;
+      flex: 0 1 25%;
   }
 
   .category-img {
@@ -247,10 +299,7 @@ body {
     transition: 0.3;
     z-index: 1;
 	  width: 100%;
-    height: auto;
-    overflow-x: auto;
-    overflow-y: auto;
-    display: block;
+    height: 100%;
     align-content: top;
   }
 
