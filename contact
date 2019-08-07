@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+  <title>Authentic Grace</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="images/assets/authenticgracelogo.png" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-<awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/AuthenticGrace.js"></script>
+
+</head>
+
+  <div class="header">
+
+<!--Storefront logo-->
+    <a href="index.html"><img class="storefrontname" src="images/assets/authenticgracelogo_top.png" alt="Authentic Grace Top Logo"></a>
+  <div class="topnav">
+    <div class="button">
+        <span style="font-size: 3em; color: #404e4d;">
+            <i class="fa fa-shopping-cart"></i>
+          </span>
+        <input type="search" placeholder="search..." />
+        <input type="login" placeholder="login" />
+    </div>
+  </div>
+  </div>
+
+  <!--Navigation bar-->
+  
+  <div class="navbar">
+    <a class="active" href="#tops">Tops</a>
+    <a href="#bottoms">Bottoms</a>
+    <a href="#flirty">Flirty</a>
+    <a href="#accessories">Accessories</a>
+    <a href="#shoes">Shoes</a>
+  </div>
+
+<body>
+<br><br><br><br>
+<div class="container">
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+          <div class="row">
+                <div class="col-25">
+                  <label for="order">Order Number</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="order" name="order" placeholder="Order Number">
+                </div>
+              </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <select id="subject" name="subject">
+                <option value="generalInquiry">General Inquiry</option>
+                <option value="myOrder">My Order</option>
+                <option value="returnsExchanges">Returns and Exchanges</option>
+                <option value="productInformation">Product Information</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="message">Message</label>
+            </div>
+            <div class="col-75">
+              <textarea id="message" name="message" placeholder="Write your message here..." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    
+    
+
+</body>
+
+<footer>
+  <div class="flex-container">
+      <div class="child-container">
+        <ul>
+        <li><strong>SHOP CATEGORIES</strong></li>
+        <li><a href="#">Tops</a></li>
+        <li><a href="#">Bottoms</a></li>
+        <li><a href="#">Flirty</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Shoes</a></li>
+        </ul>
+      </div>
+
+      <div class="child-container">
+        <ul>
+          <li><strong>VISIT US</strong></li>
+          <li>108 Meeting St</li>
+          <li>Charleston, SC 29401</li>
+          <li></li>
+        </ul>
+        <ul>
+            <li><strong>STORE HOURS</strong></li>
+            <li>M-F 10-7</li>
+            <li>S 10-7</li>
+          </ul>
+        </div>
+      <div class="child-container"><a href="http://iwearthecrowns.github.io/authenticgrace"><img src="images/assets/authenticgracelogo_footer2.png"></a>
+        <p>Don't just fit in, stand out!</p>
+        <p><span class="child-container-friends">Let's be friends</span></p>
+        <a href="#" class="btn facebook">
+            <span class="fa fa-facebook"></span></a>
+        <a href="#" class="btn twitter">
+          <span class="fa fa-twitter"></span>
+        </a>
+        <a href="#" class="btn instagram">
+            <span class="fa fa-instagram"></span>
+          </a>
+          <a href="mailto:inf@authenticgrace.com?Subject=Hello%20Grace" target="_top" class="btn envelope">
+              <span class="fa fa-envelope"></span>
+            </a>
+        </div>
+      <div class="child-container">
+        <ul>
+          <li><strong>HELP + INFO</strong></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Our Ambassadors</a></li>
+          <li><a href="#">Sponsorships</a></li>
+          <li><a href="#">Collaborate</a></li>
+        </ul>
+      </div>
+      <div class="child-container">
+        <ul>
+            <li><strong>ABOUT US</strong></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Press</a></li>
+        </ul></div>
+    </div>
+
+  
+</footer>
+
+</html>
