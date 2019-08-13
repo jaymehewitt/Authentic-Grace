@@ -57,6 +57,7 @@ body {
   display: flex;
   justify-content: flex-end;
   width: 50%;
+  margin-top: 15px;
 }
 
 .fa fa-shopping-cart {
@@ -397,14 +398,14 @@ body {
     color: #404e4d;
   }
 
-  footer ul{
+  footer ul {
     list-style:none;
     float: none;
     margin:0;
     padding:0;
   }
 
-  footer li{
+  footer li {
     float: none;
     color:#5AD2F4;
     padding:5px;
