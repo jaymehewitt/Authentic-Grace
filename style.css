@@ -366,26 +366,27 @@ body {
 
   footer {
     height: 200px;
-    margin:5px;
-    display:inline-block;
-    width:100%;
-    padding-top:30px;
+    margin: 5px;
+    display: inline-block;
+    width: 100%;
+    padding-top: 30px;
     font-family: "bellaboo";
   }
 
   footer img {
-    width:auto;
+    width: auto;
     /*centers image in container*/
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
   footer p {
-    font-size: .5em;
+    font-size: .75em;
     padding:3px;
     margin:0px;
     text-align: center;
+    color: #404e4d;
   }
 
   footer a {
@@ -393,7 +394,9 @@ body {
     padding:0px;
     margin:0px;
     font-family: "bellaboo";
+    color: #404e4d;
   }
+
   footer ul{
     list-style:none;
     float: none;
@@ -403,11 +406,15 @@ body {
 
   footer li{
     float: none;
-    color:black;
+    color:#404e4d;
     padding:5px;
     margin:0px;
-    font-size:12px;
+    font-size: .5em;
     font-family: "bellaboo";
+  }
+
+   footer a:hover {
+    color:#62BEC1;
   }
 
   .flex-container {
@@ -433,12 +440,12 @@ body {
   
   .btn:hover {
     opacity: 1;
+    color: #62BEC1;
   }
   
   .child-container-friends{
-    font-style:italic;
     font-size:1.5em;
-    font-family:serif;
+    font-family: "bellaboo";
   }
   
   .facebook {
