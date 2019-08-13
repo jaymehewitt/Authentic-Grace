@@ -57,6 +57,7 @@ body {
   display: flex;
   justify-content: flex-end;
   width: 50%;
+  margin-top: 15px;
 }
 
 .fa fa-shopping-cart {
@@ -366,48 +367,55 @@ body {
 
   footer {
     height: 200px;
-    margin:5px;
-    display:inline-block;
-    width:100%;
-    padding-top:30px;
-    font-family: open sans,helveticaneue-light,helveticaneuelight,helvetica neue light,helvetica neue,helvetica-neue,Helvetica,Arial,lucida grande,sans-serif;
+    margin: 5px;
+    display: inline-block;
+    width: 100%;
+    padding-top: 30px;
+    font-family: "bellaboo";
   }
 
   footer img {
-    width:auto;
+    width: auto;
     /*centers image in container*/
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
   footer p {
-    font-size: 12px;
+    font-size: .75em;
     padding:3px;
     margin:0px;
     text-align: center;
+    color: #404e4d;
   }
 
   footer a {
     font-size: 1em;
     padding:0px;
     margin:0px;
-    font-family: open sans,helveticaneue-light,helveticaneuelight,helvetica neue light,helvetica neue,helvetica-neue,Helvetica,Arial,lucida grande,sans-serif;
+    font-family: "bellaboo";
+    color: #404e4d;
   }
-  footer ul{
+
+  footer ul {
     list-style:none;
     float: none;
     margin:0;
     padding:0;
   }
 
-  footer li{
+  footer li {
     float: none;
-    color:black;
+    color:#5AD2F4;
     padding:5px;
     margin:0px;
-    font-size:12px;
-    font-family: open sans,helveticaneue-light,helveticaneuelight,helvetica neue light,helvetica neue,helvetica-neue,Helvetica,Arial,lucida grande,sans-serif;
+    font-size: .5em;
+    font-family: "bellaboo";
+  }
+
+   footer a:hover {
+    color:#62BEC1;
   }
 
   .flex-container {
@@ -433,12 +441,12 @@ body {
   
   .btn:hover {
     opacity: 1;
+    color: #62BEC1;
   }
   
   .child-container-friends{
-    font-style:italic;
     font-size:1.5em;
-    font-family:serif;
+    font-family: "bellaboo";
   }
   
   .facebook {
