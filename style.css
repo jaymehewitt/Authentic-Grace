@@ -362,6 +362,43 @@ body {
   animation-duration: 3s;
 }
 
+/**************************/
+ /* Meet the Designers Page*/
+ /**************************/
+
+ .body-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: inline-flex;
+  border: 1px solid black;
+ }
+ .designers {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: inline-flex;
+  border: 1px solid black;
+ }
+
+ .designer {
+  position: relative; 
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+  flex: 0 1 30%;
+  flex-flow: row-wrap;
+  justify-items: space between;
+  display: flex;
+}
+ .designer .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 40%; /* Full width */
+    padding: 20px; /* Some padding */
+    flex: 0 1 30%;
+  }
+
  /*********/
  /* Footer*/
  /*********/
@@ -369,7 +406,7 @@ body {
   footer {
     height: 200px;
     margin: 5px;
-    display: inline-block;
+    display: inline;
     width: 100%;
     padding-top: 30px;
     font-family: "bellaboo";
@@ -482,7 +519,7 @@ body {
 form {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: inline-flex;;
+  display: inline-flex;
 }
 
 firstcontainer {
