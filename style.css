@@ -380,7 +380,7 @@ body {
   width: 100%;
  }
 
- designers-container {
+ .designers-container {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: inline-flex;
