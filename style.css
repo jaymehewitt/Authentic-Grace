@@ -366,11 +366,6 @@ header {
  /* Meet the Designers Page*/
  /**************************/
 
- body {
-  border: 1px solid black;
-  width: 100%;
- }
-
  .title-container {
   display: -webkit-flex;
   display: -ms-flexbox;
