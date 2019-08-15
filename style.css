@@ -23,7 +23,7 @@ body {
 /*********/
 
 /*Header Container*/
-.header {
+header {
   display: flex;
   flex-wrap: wrap;
 }
@@ -389,7 +389,7 @@ body {
   width: 100%;
  }
 
- designer {
+ .designer {
   max-width: 100%; /* Maximum width */
   margin: 0 auto; /* Center it */
   flex: 0 1 40%;
