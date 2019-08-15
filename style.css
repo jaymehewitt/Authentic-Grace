@@ -125,6 +125,7 @@ header {
   border-bottom: 1px solid black;
   width: 100%;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .navbar-container a {
@@ -275,6 +276,7 @@ header {
   display: inline-flex;
   -webkit-align-items: center;
   -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   justify-content: space-evenly;
   border: 1px black;
@@ -390,7 +392,7 @@ header {
   flex: 0 1 40%;
   justify-items: space between;
 }
- .designer. content {
+ .designer content {
     position: absolute; /* Position the background text */
     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
     background: rgb(0, 0, 0); /* Fallback color */
@@ -466,10 +468,8 @@ input[type=submit] {
  /*********/
 
   footer {
-    height: 200px;
     margin: 5px;
     display: inline;
-    width: 100%;
     padding-top: 30px;
     font-family: "bellaboo";
   }
