@@ -6,9 +6,11 @@
   <title>Authentic Grace</title>
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <link rel="shortcut icon" href="images/assets/authenticgracelogo.png" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/AuthenticGrace.js"></script>
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 </head>
 
@@ -128,6 +130,35 @@
     </figure>-->
     </div>
   </div>
+
+   <!--Modal Contact Form-->
+  <form action="index.html" class="contact">
+      <fieldset class="contact-inner">
+        <p class="contact-input">
+          <input type="text" name="name" placeholder="Your Name…" autofocus>
+        </p>
+  
+        <p class="contact-input">
+          <label for="select" class="select">
+            <select name="subject" id="select">
+              <option value="" selected>Choose Subject…</option>
+              <option value="1">Question about my order</option>
+              <option value="1">I want to be a brand ambassador</option>
+              <option value="1">I am a designer - let's collaborate</option>
+              <option value="1">Something else</option>
+            </select>
+          </label>
+        </p>
+  
+        <p class="contact-input">
+          <textarea name="message" placeholder="Your Message…"></textarea>
+        </p>
+  
+        <p class="contact-submit">
+          <input type="submit" value="Send Message">
+        </p>
+      </fieldset>
+    </form>
 
   <!--Testimonials-->
   <div class="testimonials-container">
