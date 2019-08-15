@@ -16,14 +16,15 @@ html {
 
 body {
   font-family: Bellaboo;
-  margin: 0;
+  margin: 25px;
+  width: 100%;
 }
 /*********/
 * Header *
 /*********/
 
 /*Header Container*/
-.header {
+header {
   display: flex;
   flex-wrap: wrap;
 }
@@ -125,6 +126,7 @@ body {
   border-bottom: 1px solid black;
   width: 100%;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .navbar-container a {
@@ -275,6 +277,7 @@ body {
   display: inline-flex;
   -webkit-align-items: center;
   -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   justify-content: space-evenly;
   border: 1px black;
@@ -342,8 +345,8 @@ body {
     max-width: 750px;
     position: relative;
     margin: auto;
-    padding-top:50px;
-    padding-bottom:50px;
+    padding-top:20px;
+    padding-bottom:30px;
   }
 
   .mySlides2 {
@@ -362,15 +365,112 @@ body {
   animation-duration: 3s;
 }
 
+/**************************/
+ /* Meet the Designers Page*/
+ /**************************/
+
+ .title-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: inline-flex;
+  border: 1px solid black;
+  flex-flow: row-wrap;
+  width: 100%;
+ }
+
+ .designers-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: inline-flex;
+  border: 1px solid black;
+  flex-flow: row-wrap;
+  width: 100%;
+ }
+
+ .designer {
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+  flex: 0 1 40%;
+  justify-items: space between;
+}
+ .designer content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 40%; /* Full width */
+    padding: 20px; /* Some padding */
+    flex: 0 1 40%;
+  }
+
+ /****************/
+ /* Contact Page*/
+ /***************/
+
+form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: inline-flex;
+}
+
+firstcontainer {
+  flex: 0 1 25%;
+  align-items: flex-start;
+}
+
+secondcontainer {
+  flex: 0 1 50%;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #60D2F2;
+  color: #404e4d;
+  padding: 12px 20px;
+  border: 2px solid #404e4d;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: bellaboo;
+  font-size: 1em;
+}
+
+ /* Style inputs, select elements and textareas */
+ input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #404e4d;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: bellaboo;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  firstcontainer, secondcontainer, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+  .fa {
+    margin-right:5px;
+  }
+
+
  /*********/
  /* Footer*/
  /*********/
 
   footer {
-    height: 200px;
     margin: 5px;
-    display: inline-block;
-    width: 100%;
+    display: inline;
     padding-top: 30px;
     font-family: "bellaboo";
   }
@@ -473,73 +573,4 @@ body {
   
   .btn-wrapper p {
     margin: 10px 0;
-  }
-  
-/*Contact Page*/
-  
-
-  /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
-}
-
-/* Style the label to display next to the inputs */
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-/* Style the submit button */
-input[type=submit] {
-  background-color: #60D2F2;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-/* Style the container */
-.container {
-  border-radius: 5px;
-  background-color: #E3DBDB;
-  padding: 20px;
-}
-
-/* Floating column for labels: 25% width */
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-/* Floating column for inputs: 75% width */
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-  .fa {
-    margin-right:5px;
   }
