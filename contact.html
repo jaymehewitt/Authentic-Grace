@@ -39,62 +39,45 @@
 </header>
 
 <body>
-<br><br><br><br>
-<div class="container">
-        <form action="action_page.php">
-          <div class="row">
-            <div class="col-25">
-              <label for="fname">First Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="lname">Last Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            </div>
-          </div>
-          <div class="row">
-                <div class="col-25">
-                  <label for="order">Order Number</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="order" name="order" placeholder="Order Number">
-                </div>
-              </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="subject">Subject</label>
-            </div>
-            <div class="col-75">
-              <select id="subject" name="subject">
-                <option value="generalInquiry">General Inquiry</option>
-                <option value="myOrder">My Order</option>
-                <option value="returnsExchanges">Returns and Exchanges</option>
-                <option value="productInformation">Product Information</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="message">Message</label>
-            </div>
-            <div class="col-75">
-              <textarea id="message" name="message" placeholder="Write your message here..." style="height:200px"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <input type="submit" value="Submit">
-          </div>
-        </form>
-      </div>
-    
-    
+    <form action="action_page.php">
+      <div class="firstcontainer">
+        <div>
+          <label for="fname">First Name</label>
+          <input id="fname" name="firstname" type="text" placeholder="Your name..."/>
+        </div>
 
+        <div>
+          <label for="lname">Last Name</label>
+          <input id="lname" name="lastname" type="text" placeholder="Your last name..."/>
+        </div>
+
+        <div>
+          <label for="order">Order Number</label>
+          <input id="order" name="order" type="text" placeholder="Order Number"/>
+        </div>
+      </div>
+      
+      <div class="secondcontainer"
+        <div>
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="generalInquiry">General Inquiry</option>
+            <option value="myOrder">My Order</option>
+            <option value="returnsExchanges">Returns and Exchanges</option>
+            <option value="productInformation">Product Information</option>
+          </select>
+        </div>
+        
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." style="height: 200px"></textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+  </form>
 </body>
 
 <footer>
