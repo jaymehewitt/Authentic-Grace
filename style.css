@@ -388,7 +388,7 @@ header {
  .designer {
   display: inline-flex;
   flex-wrap: wrap;
-  flex: 0 1 25%;
+  flex: 0 1 30%;
   height: auto;
   max-width: 400px;
   position: relative;
