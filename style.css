@@ -379,19 +379,17 @@ header {
  }
 
  .designers-container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: inline-flex;
-  border: 1px solid black;
-  flex-flow: row-wrap;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
  }
 
  .designer {
-  max-width: 100%; /* Maximum width */
-  margin: 0 auto; /* Center it */
-  flex: 0 1 40%;
-  justify-items: space between;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex: 0 1 30%;
+  height: auto;
+  width: 400px;
 }
  .designer content {
     position: absolute; /* Position the background text */
