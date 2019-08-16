@@ -375,6 +375,7 @@ header {
   display: inline-flex;
   flex-flow: row-wrap;
   width: 100%;
+  color: #404e4d;
  }
 
  .designers-container {
@@ -411,6 +412,24 @@ header {
     flex: 0 1 25%;
   }
 
+  .end-title-container {
+    color: #404e4d;
+    text-decoration: none;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .end-title-container a{
+    color: #5AD2F4;
+    text-decoration: none;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .end-title-container a:hover {
+    color: #62BEC1;
+    background: transparent;
+}
  /****************/
  /* Contact Page*/
  /***************/
