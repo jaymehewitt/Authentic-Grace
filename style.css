@@ -390,6 +390,7 @@ header {
   flex-wrap: wrap;
   flex: 0 1 30%;
   height: auto;
+  width: 100%;
   max-width: 400px;
   position: relative;
   margin: 0 auto; /* Center it */
