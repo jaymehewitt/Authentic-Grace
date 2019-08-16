@@ -373,7 +373,6 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: inline-flex;
-  border: 1px solid black;
   flex-flow: row-wrap;
   width: 100%;
  }
@@ -381,25 +380,34 @@ header {
  .designers-container {
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 25px;
  }
 
  .designer {
   display: inline-flex;
   flex-wrap: wrap;
-  flex: 0 1 30%;
+  flex: 0 1 25%;
   height: auto;
-  width: 400px;
+  max-width: 400px;
+  position: relative;
+  margin: 0 auto; /* Center it */
+  border: solid #404e4d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3;
+    z-index: 1;
 }
- .designer content {
+
+ .designer .content {
     position: absolute; /* Position the background text */
     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
     background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: #f1f1f1; /* Grey text */
-    width: 40%; /* Full width */
-    padding: 20px; /* Some padding */
-    flex: 0 1 40%;
+    width: 100%; /* Full width */
+    padding: 10px; /* Some padding */
+    flex: 0 1 25%;
   }
 
  /****************/
