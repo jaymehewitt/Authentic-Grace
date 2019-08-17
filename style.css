@@ -544,6 +544,7 @@ input[type=submit] {
     margin:0px;
     font-family: "bellaboo";
     color: #404e4d;
+    text-decoration: none;
   }
 
   footer ul {
