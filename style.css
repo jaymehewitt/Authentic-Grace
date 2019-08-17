@@ -26,19 +26,40 @@ body {
 /*Header Container*/
 header {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: row-wrap;
+  color: #404e4d;
+}
+
+header h3 {
+  color: #404e4d;
+  margin-top: 0px;
+}
+
+header h3 a {
+  color: #5AD2F4;
+}
+
+header h3 a:hover {
+  color: #62BEC1;
+}
+
+.breadcrumb-container {
+margin-right: auto;
+width: 20%;
+}
+.storefront-container {
+  width: 70%;
 }
 
 .header-container {
   flex: 0 1 50%;
   height: 150px;
-  border-top: 10px;
   display: flex;
   flex-flow: row-wrap;
   width: 100%;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: inline-flex;
 }
 
 .storefrontname {
@@ -296,6 +317,7 @@ header {
       flex-wrap: wrap;
       margin-bottom: 2em;
       flex: 0 1 25%;
+      text-decoration: none;
   }
 
   .category-img {
@@ -308,10 +330,10 @@ header {
     align-content: top;
   }
 
-  .category-img:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
   }
-
+  
   .caption {
     color: white;
     width: 100%;
@@ -502,8 +524,7 @@ input[type=submit] {
   }
 
   footer img {
-    width: auto;
-    /*centers image in container*/
+    width: auto; /*centers image in container*/
     display: block;
     margin-left: auto;
     margin-right: auto;
