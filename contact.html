@@ -46,6 +46,7 @@
 
 <body>
     <form action="action_page.php">
+      <div class="form-container">
       <div class="firstcontainer">
         <div>
           <label for="fname">First Name</label>
@@ -56,15 +57,11 @@
           <label for="lname">Last Name</label>
           <input id="lname" name="lastname" type="text" placeholder="Your last name..."/>
         </div>
-
-        <div>
-          <label for="order">Order Number</label>
-          <input id="order" name="order" type="text" placeholder="Order Number"/>
-        </div>
       </div>
       
-      <div class="secondcontainer"
-        <div>
+      <div class="secondcontainer">
+          <label for="order">Order Number</label>
+          <input id="order" name="order" type="text" placeholder="Order Number"/>
           <label for="subject">Subject</label>
           <select id="subject" name="subject">
             <option value="generalInquiry">General Inquiry</option>
@@ -72,17 +69,12 @@
             <option value="returnsExchanges">Returns and Exchanges</option>
             <option value="productInformation">Product Information</option>
           </select>
-        </div>
         
-        <div>
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="What's up?" style="height: 200px"></textarea>
-        </div>
-
-        <div>
           <input type="submit" value="Submit">
-        </div>
       </div>
+    </div>
   </form>
 </body>
 
