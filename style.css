@@ -469,7 +469,7 @@ form {
 .form-container {
   width: 100%;
   align-items: center;
-  justify-items: center;
+  justify-items: space evenly;
 }
 
 .firstcontainer {
@@ -487,6 +487,22 @@ form {
   border: 1px solid black;
   width: 30%;
   flex: 0 1 auto;
+}
+
+.label {
+  border: 1px solid black;
+  width: 25%;
+  flex: 0 1 auto; 
+  display: inline-flex;
+}
+
+.input {
+  border: 1px solid black;
+  width: 70%;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 .secondcontainer {
