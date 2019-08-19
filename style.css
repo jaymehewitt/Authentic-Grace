@@ -10,8 +10,9 @@ html {
 }
 
 @font-face {
-  font-family: "bellaboo";
+  font-family: "bellaboo", "Autumn Chant";
   src: url("fonts/bellaboo.woff") format('woff');
+  src: url("fonts/Autumn Chant.woff") format('woff');
 }
 
 body {
